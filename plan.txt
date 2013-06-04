@@ -1,11 +1,13 @@
 ==== 03/06/13
 
+- Download code from https://github.com/bernardorufino/portalh8lab
+
 - Ruby
 
 IRB:
 string (" or ', +, *, #{}), 
 numbers (+, -, *, /, **), 
-arrays (<<, +),
+arrays (<<, +, [], []=),
 symbols (:, :"", to_sym), 
 // why? strings are mutable, symbols are not, mix of identifiers, enums, names and strings
 variables (no types! overwrite type, nil)  
@@ -19,6 +21,9 @@ EDITOR:
 class (class, def, optional return, arguments with no types, varargs with *)
 instance variables (nil instead of name error, nil?), accessors, 
 instatiation (Klass.new), class methods ("static"),
+
+PAREI AQUI!
+
 special method names (!, ?, =, [], []=, *, +, -, ==, ...),
 respond_to? (duck typing, test for behavior not identity),
 blocks, blocks, blocks everywhere!
