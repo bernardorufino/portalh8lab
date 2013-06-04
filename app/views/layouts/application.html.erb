@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PortalH8Lab</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%# javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <style type="text/css">
+  #menu {
+  	background-color: #DDD;
+  	padding: 2px;
+  	text-align: center;
+  	border-bottom: 2px solid #000; 
+  }
+  body {
+  	margin: 0;
+  	font-family: Verdana;
+  } 	 
+  #header {
+  	text-align: center;
+  	background-color: #F00;
+  	padding: 10px;
+  }
+  #footer {
+  	color: #FFF;
+  	background-color: #333;
+  	padding: 10px;
+  }
+  #content {
+  	padding: 20px;
+  	text-align: justify;
+  }
+
+  </style>
+</head>
+<body>
+
+<div id="header">
+	<h1>Portal H8</h1>
+</div>
+
+<div id="menu">
+	<a href="/pages/index">Home</a>
+	
+	 | 
+	<a href="/pages/about">Sobre</a>
+</div>	
+
+<div id="content">
+	<%= yield %>
+</div>
+
+<div id="footer">
+	Rodape
+</div>
+
+</body>
+</html>
