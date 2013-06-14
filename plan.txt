@@ -1,0 +1,60 @@
+==== 03/06/13
+
+- Download code from 
+https://github.com/bernardorufino/portalh8lab
+
+- Ruby
+
+IRB:
+string (" or ', +, *, #{}), 
+numbers (+, -, *, /, **), 
+arrays (<<, +, [], []=),
+symbols (:, :"", to_sym), 
+// why? strings are mutable, symbols are not, mix of identifiers, enums, names and strings
+variables (no types! overwrite type, nil)  
+puts, gets, inspect, p, 
+method calls (parentesis, operator overloading, ! and ?),
+delimiters and blocks (end), 
+if (everything is true except false and nil), elsif, if not, unless, 
+while, each, step(limit, step), iterators (each_with_index, map), 
+
+EDITOR:
+class (class, def, optional return, arguments with no types, varargs with *)
+instance variables (nil instead of name error, nil?), accessors, 
+instatiation (Klass.new), class methods ("static"),
+
+PAREI AQUI!
+
+special method names (!, ?, =, [], []=, *, +, -, ==, ...),
+
+respond_to? (duck typing, test for behavior not identity),
+blocks, blocks, blocks everywhere!
+example with #each! syntax ({...} for inliners, do ... end for multiline)
+one block per method! more? Proc.new{...} or lambda{...}
+inside method: yield, block_given?, & to convert to proc
+
+EXTRA:
+hashes (dictionaries)
+regular expressions
+
+- Rails
+
+-- Still seems magic (DSL, self changed, method_missing, etc.)
+-- MVC pg 57 Michael Hartl
+-- Sample view
+-- Sample controller (old style! controller/action/id)
+---- Instance variables are visible
+---- More ERB iterating
+-- Model! User (id integer, name string, email, string)
+---- rails g model User name:string email:string (why types? DB!)
+---- See migration, then run bundle exec rake db:migrate
+---- rails c
+---- open other console cd /d/developer/portalh8lab/log
+---- tail -f development.log
+---- User.all, User.new, u.name=, u.email=, u.save, User.all, User.create, u.delete, User.count
+---- User.where, User.find(id), User.first
+-- SCAFFOLD! rails g scaffold User name:string email:string
+---- Sample controller, how it works
+---- Notion of resource
+
+DONE!
