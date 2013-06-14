@@ -26,6 +26,7 @@ instatiation (Klass.new), class methods ("static"),
 PAREI AQUI!
 
 special method names (!, ?, =, [], []=, *, +, -, ==, ...),
+
 respond_to? (duck typing, test for behavior not identity),
 blocks, blocks, blocks everywhere!
 example with #each! syntax ({...} for inliners, do ... end for multiline)
